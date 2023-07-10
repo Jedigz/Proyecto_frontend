@@ -1,36 +1,34 @@
-console.log("load JS final aqui es........")
+function saveContactos(){
 
-function saveForm(){
-
-    let nameForm = document.getElementById("name");
-    let lastNameForm = document.getElementById("lastName");
-    let countryForm = document.getElementById("country");
-    let emailForm = document.getElementById("email");
+    let nameContactos = document.getElementById("name");
+    let lastNameContactos = document.getElementById("lastName");
+    let countryContactos = document.getElementById("country");
+    let emailContactos = document.getElementById("email");
 
 
-    let form = {
-        name: nameForm.value,
-        lastName: lastNameForm.value,
-        email: emailForm.value,
-        country: countryForm.value
+    let contactos = {
+        name: nameContactos.value,
+        lastName: lastNameContactos.value,
+        email: emailContactos.value,
+        country: countryContactos.value
     }
 
-    console.log(form);
+    console.log(contactos);
 
-    let url = "http://localhost:8000/api/form";
+    let url = "http://localhost:8000/api/contactos";
     let params = {
         method: "POST",
         headers: {
             "Content-Type": "application/json" 
         },
-        body: JSON.stringify(form),
+        body: JSON.stringify(contactos),
     }
 
     fetch(url, params).then(response =>{
         console.log(response);
 
         if(response.status == 201){
-            alert("Formulario enviado");
+            alert("Formulario enviado con exito");
         }else{
             alert("Error en el envio del formuario");
         }
