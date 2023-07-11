@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>John Gomez fullstack</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>John Gomez fullstack</title>
   </head>
   <header>
       <img
@@ -20,17 +20,15 @@
         alt="logo"
       />
     </div>
-    <ul class="nav justify-content-center bg-dark my-auto">
-      <li class="nav-item">
-        <a class="nav-link active link-light" href="index.html"
-          >Curriculum Vitae</a
-        >
+    <ul class="nav justify-content-center my-auto">
+      <li class="nav-item" style="margin-right: 10px;">
+        <a class="btn btn-light" href="index.html"  style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='#FFFAFA';">Curriculum Vitae</a>
+      </li>
+      <li class="nav-item" style="margin-right: 10px;">
+        <a class="btn btn-light" href="brochure.html" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='#FFFAFA';">Brochure</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-light" href="brochure.html">Brochure</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-warning" href="#">Formulario</a>
+        <a class="btn btn-light" href="#" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='#FFFAFA';">Formulario</a>
       </li>
     </ul>
   </header>
@@ -56,7 +54,6 @@
         <div class="mb-3">
           <label for="email" class="form-label text-warning ">Correo Electrónico</label>
           <input placeholder="Ingresa tu Correo Electronico" type="email" class="form-control " id="email">
-         <!-- <div class="contactos-text text-warning">Nunca compartiremos tu correo electronico con alguien mas.</div>  -->
         </div>
         <div class=" d-flex justify-content-center pt-3">
           <button type="button" class="btn btn-outline-warning" id="save" onclick="saveContactos()">Enviar</button>
@@ -67,40 +64,43 @@
 
 
   <footer id="footcontactos"
-    class="d-flex justify-content-around align-items-center bg-dark text-white p-4 flex-wrap"
+   style="background-color: #648FBB;" class="d-flex justify-content-around align-items-center text-white p-4 flex-wrap"
   >
-    <div >
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6969298236604!2d-76.51654352611092!3d3.4237976514051978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6e7ff9f5ba5%3A0x3b31d45321ee3eaa!2sCl.%2031%20%2332b-26%2C%20San%20Carlos%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1688705227479!5m2!1ses-419!2sco"
-        width="300"
-        height="150"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-    <div >
-      <img
-        id="logoFoot"
-        class="logo img-thumbnail h-5px rounded"
-        src="assets/imagenes/T_presentacion.png"
-        alt="logo"
-      />
-    </div>
-    <div>
-      <a class="px-2 " href="https://www.facebook.com/"
-        ><img src="assets/imagenes/facebook.png" alt="facebook"
-      /></a>
-      <a class="px-2" href="https://www.instagram.com/"
-        ><img src="assets/imagenes/instagram.png" alt="instagram"
-      /></a>
-      <a
-        class="px-2"
-        href="https://www.linkedin.com/in/johngomezz"
-        ><img src="assets/imagenes/linkedin.png" alt="linkedin"
-      /></a>
-    </div>
+  <div>
+    <img
+      id="logoFoot"
+      class="logo img-thumbnail rounded"
+      src="assets/imagenes/T_presentacion.png"
+      alt="logo"
+    />
+  </div>
+  <div>
+    <a class="px-2" href="https://www.facebook.com/"
+      ><img src="assets/imagenes/Facebook.png" alt="facebook"
+    /></a>
+
+    <a class="px-2" href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Des"
+      ><img src="assets/imagenes/twitter.png" alt="twitter"
+    /></a>
+
+    <a
+      class="px-2"
+      href="https://https://www.linkedin.com/in/johngomezz"
+      ><img src="assets/imagenes/Linkedin.png" alt="linkedin"
+    /></a>
+  </div>
+  <div>
+    <iframe
+      class="rounded"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6969298236604!2d-76.51654352611092!3d3.4237976514051978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6e7ff9f5ba5%3A0x3b31d45321ee3eaa!2sCl.%2031%20%2332b-26%2C%20San%20Carlos%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1688705227479!5m2!1ses-419!2sco"
+      width="300"
+      height="150"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
 
     <script src="script.js"></script>
 

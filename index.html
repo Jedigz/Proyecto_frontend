@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>John Gomez fullstack</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>John Gomez fullstack</title>
   </head>
   <header> 
       <img
@@ -20,15 +21,15 @@
         alt="logo"
       />
     </div>
-    <ul class="nav justify-content-center bg-dark my-auto">
-      <li class="nav-item">
-        <a class="nav-link active link-warning" href="#">Curriculum Vitae</a>
+    <ul class="nav justify-content-center my-auto">
+      <li class="nav-item" style="margin-right: 10px;">
+        <a class="btn btn-light" href="#" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='#FFFAFA';">Curriculum Vitae</a>
+      </li>
+      <li class="nav-item" style="margin-right: 10px;">
+        <a class="btn btn-light" href="brochure.html" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='#FFFAFA';">Brochure</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-light" href="brochure.html">Brochure</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-light" href="formulario.html">Formulario</a>
+        <a class="btn btn-light" href="formulario.html" style="transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='#FFFAFA';">Formulario</a>
       </li>
     </ul>
   </header>
@@ -84,8 +85,31 @@
     </div>
   </body>
   <footer
-    class="d-flex justify-content-around align-items-center bg-dark  text-white p-4 flex-wrap"
+   style="background-color: #648FBB;" class="d-flex justify-content-around align-items-center  text-white p-4 flex-wrap"
   >
+    <div>
+      <img
+        id="logoFoot"
+        class="logo img-thumbnail rounded"
+        src="assets/imagenes/T_presentacion.png"
+        alt="logo"
+      />
+    </div>
+    <div>
+      <a class="px-2" href="https://www.facebook.com/"
+        ><img src="assets/imagenes/Facebook.png" alt="facebook"
+      /></a>
+
+      <a class="px-2" href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Des"
+        ><img src="assets/imagenes/twitter.png" alt="twitter"
+      /></a>
+
+      <a
+        class="px-2"
+        href="https://https://www.linkedin.com/in/johngomezz"
+        ><img src="assets/imagenes/Linkedin.png" alt="linkedin"
+      /></a>
+    </div>
     <div>
       <iframe
         class="rounded"
@@ -97,29 +121,6 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-    </div>
-    <div>
-      <img
-        id="logoFoot"
-        class="logo img-thumbnail rounded"
-        src="assets/imagenes/T_presentacion.png"
-        alt="logo"
-      />
-    </div>
-    <div>
-      <a class="px-2" href="https://www.facebook.com/"
-        ><img src="assets/imagenes/124010 (1).png" alt="facebook"
-      /></a>
-
-      <a class="px-2" href="https://www.instagram.com/"
-        ><img src="assets/imagenes/tw1.png" alt="instagram"
-      /></a>
-
-      <a
-        class="px-2"
-        href="https://www.linkedin.com/in/diego-fernando-torrez-gonzalez-07414a1bb/"
-        ><img src="assets/imagenes/174857 (1).png" alt="linkedin"
-      /></a>
     </div>
     <script src="script.js"></script>
   </footer>

@@ -1,3 +1,6 @@
+console.log("Loading Javascript.......")
+
+
 function saveContactos(){
 
     let nameContactos = document.getElementById("name");
@@ -25,13 +28,50 @@ function saveContactos(){
     }
 
     fetch(url, params).then(response =>{
+        
         console.log(response);
 
         if(response.status == 201){
-            alert("Formulario enviado con exito");
+            alert("Creación exitosa de contacto !!");
         }else{
-            alert("Error en el envio del formuario");
+            alert("Error en la creación de contacto !!");
         }
     });
     return true;
 }
+
+//  function getBooks(){
+
+
+//     let url = "http://localhost:8000/api/books";
+//     let params = {
+//     method: "GET",
+//     headers:{
+//         "Content-Type": "application/json"
+//     },
+//     }
+
+//     fetch(url,params).then((response) =>{
+//         console.log(response);
+//         console.log(response.json());
+//     });
+
+
+
+    
+//     url = "https://api.agify.io/?name=meelad";
+//     params = {      
+//     method: "GET",
+//     headers:{
+//         "Content-Type": "application/json"
+//     },
+//     }
+
+//     fetch(url,params).then((response) =>{
+//         console.log(response);
+//         console.log(response.json());
+//     });
+
+
+//     return true;
+// }
