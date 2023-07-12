@@ -7,9 +7,9 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #648fbb; 
+    background-image: url('/imagenes/circuito2.png'); 
 }
-#cvContent{
+#cuadros{
     width: 60%;
 }
 
