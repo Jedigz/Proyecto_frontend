@@ -7,7 +7,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url('/imagenes/circuito2.png'); 
+    background-image: url('imagenes/circuito2.png'); 
 }
 #cuadros{
     width: 60%;
